@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background-image: url(image.svg);
+    
+    background-position: center;
+    background-size: cover;
+    height: 102vh;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:  #222222;
+    overflow: hidden;
+    position: relative
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  body {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire body */
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 3rem;
+    margin-top: 4rem;
+    position: absolute;
+    left: 10%; /* alligns the L to R */
+    text-align: center;
+}
+
+h1, h2, p {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to headings and paragraphs */
+}
+
+.blackBox {
+    width: 25%; 
+    height: 50vh;
+    background-color: whitesmoke;
+    border-radius: 20px; 
+    position: absolute;
+    top: 50%;
+    right: 10%; 
+    transform: translateY(-50%);
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+
+
+}
+
+/* Adjust the positioning of the logo icon if necessary */
+
+title{
+    color: lightskyblue;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+    font-weight: 1000;
+}
+
+h1{
+    color: lightskyblue;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+    font-weight: 1000;
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom:2rem
+}
+
+
+p{
+    color: rgb(255, 0, 255);
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.blackBox label a:link,.blackBox label a:visited {
+    font-size: 50px; 
+    color: rgb(59, 245, 121); 
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.blackBox input[type="checkbox"]:checked + label a {
+    font-size: 50px; 
+    font-weight: bold; 
+    color: lightgreen;
+    text-decoration: line-through;
+}
+.blackBox input[type="checkbox"]{
+    transform: scale(3) ;
+
+}
+
+.blackBox {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    }
+
+#messageForm{
+    float: right;
+}
+
+#messageInput{
+    resize: none ;
+    width: 400px;
+    height: 200px;
+}
+
+#feedback{
+    float: right;
+}
+
+.text-bar {
+    position: fixed;
+    bottom: 50px; /* Adjust the distance from the bottom as needed */
+    left: 50px; /* Adjust the distance from the left as needed */
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #FDDAAB, #BDBDBD);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .text-bar input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none;
+  }
+  
+  .text-bar button {
+    background-color: #51a552;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: px 5px;
+    margin-left: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-bar button:hover {
+    background-color: #ffab33;
+  }
+  
+  /* Hover Effect */
+  .text-bar:hover {
+    transform: translate(-50%, -50%) scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Focus Effect */
+  .text-bar input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
